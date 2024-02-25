@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart House Developer</h1>
+        <div id="houses"></div>
+        <h2>Add a New House</h2>
+        <form id="addHouseForm">
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="occupants">Occupants:</label><br>
+            <input type="number" id="occupants" name="occupants" required><br>
+            <label for="poultry">Poultry:</label><br>
+            <input type="checkbox" id="poultry" name="poultry"><br>
+            <label for="vegetableGarden">Vegetable Garden:</label><br>
+            <input type="checkbox" id="vegetableGarden" name="vegetableGarden"><br>
+            <label for="fishPond">Fish Pond:</label><br>
+            <input type="checkbox" id="fishPond" name="fishPond"><br><br>
+            <button type="submit">Add House</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
